@@ -41,8 +41,11 @@ interface DemoDatabase {
 }
 
 const DB_KEY = 'elderly-care-demo-database'
-const now = new Date()
-const dayKey = localDateKey(now)
+
+/** 当天日期键在调用时实时计算：页面跨午夜保持打开时，“今日”判断才不会失效。 */
+function todayKey(): string {
+  return localDateKey(new Date())
+}
 
 function createInitialDatabase(): DemoDatabase {
   return {
@@ -58,8 +61,8 @@ function createInitialDatabase(): DemoDatabase {
       { id: 'plan-003', elderId: 'elder-002', medicineName: '心脏用药（示例）', dose: '1片', timesPerDay: 2, reminderTime: '09:00', cycle: 'daily', weekdays: [], note: '饭后' },
     ],
     logs: [
-      { id: 'log-seed-001', planId: 'plan-001', elderId: 'elder-001', medicineName: '降压药（示例）', status: 'taken', scheduledAt: `${dayKey}T08:00:00`, operatedAt: `${dayKey}T08:05:00` },
-      { id: 'log-seed-002', planId: 'plan-003', elderId: 'elder-002', medicineName: '心脏用药（示例）', status: 'missed', scheduledAt: `${dayKey}T09:00:00`, operatedAt: `${dayKey}T11:01:00` },
+      { id: 'log-seed-001', planId: 'plan-001', elderId: 'elder-001', medicineName: '降压药（示例）', status: 'taken', scheduledAt: `${todayKey()}T08:00:00`, operatedAt: `${todayKey()}T08:05:00` },
+      { id: 'log-seed-002', planId: 'plan-003', elderId: 'elder-002', medicineName: '心脏用药（示例）', status: 'missed', scheduledAt: `${todayKey()}T09:00:00`, operatedAt: `${todayKey()}T11:01:00` },
     ],
     invites: [],
   }
@@ -125,7 +128,10 @@ export async function register(username: string, password: string, name: string,
 }
 
 export function logout(): void {
-  localStorage.clear()
+  // 只清除登录态，保留演示数据库与药品识别历史等业务数据。
+  localStorage.removeItem('token')
+  localStorage.removeItem('userId')
+  localStorage.removeItem('role')
 }
 
 export function getCurrentUser(): DemoUser | undefined {
@@ -202,7 +208,7 @@ export function getTodayReminders(elderId: string): Array<MedicationPlan & { sch
   const database = readDatabase()
   return database.plans.filter((plan) => plan.elderId === elderId && planAppliesToday(plan)).map((plan) => {
     const scheduledAt = scheduleForToday(plan)
-    const completed = database.logs.some((log) => log.planId === plan.id && localDateKey(new Date(log.scheduledAt)) === dayKey)
+    const completed = database.logs.some((log) => log.planId === plan.id && localDateKey(new Date(log.scheduledAt)) === todayKey())
     return { ...plan, scheduledAt, completed }
   })
 }
@@ -234,7 +240,7 @@ export function getMissedAlerts(elderIds: string[]): Array<{ plan: MedicationPla
   for (const plan of database.plans.filter((item) => elderIds.includes(item.elderId) && planAppliesToday(item))) {
     const scheduledAt = scheduleForToday(plan)
     const scheduledMs = new Date(scheduledAt).getTime()
-    const matchingLog = database.logs.find((log) => log.planId === plan.id && localDateKey(new Date(log.scheduledAt)) === dayKey)
+    const matchingLog = database.logs.find((log) => log.planId === plan.id && localDateKey(new Date(log.scheduledAt)) === todayKey())
     const overdueMinutes = Math.floor((current - scheduledMs) / 60000)
     if (matchingLog?.status === 'missed' || (!matchingLog && overdueMinutes >= 120)) {
       const elder = database.users.find((user) => user.id === plan.elderId)

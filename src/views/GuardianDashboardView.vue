@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
 import AppShell from '@/components/AppShell.vue'
 import StatCharts from '@/components/StatCharts.vue'
 import { bindByInvite, deletePlan, getBoundElders, getCurrentUser, getMedicationLogs, getMissedAlerts, getPlans, getStatistics, savePlan, type MedicationLog, type MedicationPlan } from '@/services/demoApi'

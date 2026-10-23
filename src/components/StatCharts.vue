@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts/core'
+import { BarChart, LineChart, PieChart } from 'echarts/charts'
+import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components'
+import { CanvasRenderer } from 'echarts/renderers'
+import type { EChartsType } from 'echarts/core'
+
+// 按需注册：本组件只用柱状图、饼图、折线图，避免把整个 echarts 打进产物。
+echarts.use([BarChart, LineChart, PieChart, GridComponent, LegendComponent, TooltipComponent, CanvasRenderer])
 
 const props = defineProps<{ scope: 'guardian' | 'admin'; elderName?: string }>()
 const recognitionChart = ref<HTMLElement>()
 const categoryChart = ref<HTMLElement>()
 const completionChart = ref<HTMLElement>()
-const instances: echarts.ECharts[] = []
+const instances: EChartsType[] = []
 
 function renderCharts(): void {
   instances.forEach((chart) => chart.dispose())

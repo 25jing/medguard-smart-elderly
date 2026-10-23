@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { ElMessage } from 'element-plus'
 import MedicineRecognitionView from '@/views/MedicineRecognitionView.vue'
 import AppShell from '@/components/AppShell.vue'
 import { generateInvite, getCurrentUser, getMedicationLogs, getTodayReminders, recordMedication, type MedicationLog } from '@/services/demoApi'
