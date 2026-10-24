@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, defineAsyncComponent, onBeforeUnmount, onMounted, ref } from 'vue'
 import AppShell from '@/components/AppShell.vue'
+import AssistantChat from '@/components/AssistantChat.vue'
 import { generateInvite, getCurrentUser, getMedicationLogs, getTodayReminders, recordMedication, type MedicationLog } from '@/services/demoApi'
 
 // 药品识别组件体积较大且只有老人角色使用，异步加载避免其他角色一起买单。
@@ -67,6 +68,7 @@ onBeforeUnmount(() => window.clearInterval(pollTimer))
       <section class="surface invite-section"><div><p class="eyebrow">家庭照护</p><h2>邀请家人关注用药</h2><p>生成 6 位数字邀请码，5 分钟内有效。</p></div><div class="invite-output"><strong v-if="inviteCode" class="invite-code">{{ inviteCode }}</strong><span v-if="inviteCode">有效至 {{ inviteExpiry }}</span><button class="secondary-button" type="button" @click="createInvite">{{ inviteCode ? '重新生成' : '生成邀请码' }}</button></div></section>
       <section class="log-section"><div class="section-title"><div><p class="eyebrow">MY RECORD</p><h2>最近服药记录</h2></div></div><div v-if="personalLogs.length" class="surface log-list"><article v-for="log in personalLogs.slice(0, 5)" :key="log.id" class="log-row"><div><strong>{{ log.medicineName }}</strong><time>{{ new Date(log.operatedAt).toLocaleString('zh-CN') }}</time></div><span class="status-pill" :class="log.status === 'taken' ? 'status-done' : log.status === 'missed' ? 'status-alert' : 'status-pending'">{{ log.status === 'taken' ? '已服药' : log.status === 'missed' ? '漏服' : '已跳过' }}</span></article></div><p v-else class="empty-copy">服药打卡后，记录会显示在这里。</p></section>
       <section class="recognition-section"><div class="section-title"><div><p class="eyebrow">MEDICINE SCAN</p><h2>药品拍照识别</h2></div></div><MedicineRecognitionView /></section>
+      <section class="assistant-section"><div class="section-title"><div><p class="eyebrow">AI ASSISTANT</p><h2>用药与养老智能问答</h2></div></div><AssistantChat role="elder" /></section>
     </main>
     <el-dialog v-model="reminderDialogOpen" class="elder-reminder-dialog" width="min(680px, 94vw)" :show-close="false" :close-on-click-modal="false" :close-on-press-escape="false" center>
       <div v-if="currentReminder" class="reminder-dialog-content"><div class="alarm-icon">!</div><p class="eyebrow">服药时间到了</p><h2>{{ currentReminder.medicineName }}</h2><p class="reminder-dose">{{ currentReminder.dose }} · {{ currentReminder.note }}</p><p class="reminder-instruction">服药后请点“我已服药”；如果这次不方便，请点“跳过本次”。</p><div class="reminder-actions"><el-button class="take-button" @click="markMedication('taken')">我已服药</el-button><el-button class="skip-button" @click="markMedication('skipped')">跳过本次</el-button></div></div>
