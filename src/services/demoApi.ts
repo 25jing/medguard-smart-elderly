@@ -68,21 +68,34 @@ function createInitialDatabase(): DemoDatabase {
   }
 }
 
+/** 数据库内存缓存：仪表盘的多个 computed 共享同一份解析结果，避免反复 JSON.parse。 */
+let cachedDatabase: DemoDatabase | null = null
+
 function readDatabase(): DemoDatabase {
+  if (cachedDatabase) return cachedDatabase
   try {
     const stored = localStorage.getItem(DB_KEY)
-    if (stored) return JSON.parse(stored) as DemoDatabase
+    if (stored) {
+      cachedDatabase = JSON.parse(stored) as DemoDatabase
+      return cachedDatabase
+    }
   } catch {
     localStorage.removeItem(DB_KEY)
   }
-  const database = createInitialDatabase()
-  writeDatabase(database)
-  return database
+  cachedDatabase = createInitialDatabase()
+  writeDatabase(cachedDatabase)
+  return cachedDatabase
 }
 
 function writeDatabase(database: DemoDatabase): void {
+  cachedDatabase = database
   localStorage.setItem(DB_KEY, JSON.stringify(database))
 }
+
+// 其他标签页修改数据库时让本页缓存失效，读到最新数据。
+window.addEventListener('storage', (event) => {
+  if (event.key === null || event.key === DB_KEY) cachedDatabase = null
+})
 
 function newId(prefix: string): string {
   return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`

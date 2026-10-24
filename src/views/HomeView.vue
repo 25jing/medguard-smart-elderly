@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import MedicineRecognitionView from '@/views/MedicineRecognitionView.vue'
+import { computed, defineAsyncComponent, onBeforeUnmount, onMounted, ref } from 'vue'
 import AppShell from '@/components/AppShell.vue'
 import { generateInvite, getCurrentUser, getMedicationLogs, getTodayReminders, recordMedication, type MedicationLog } from '@/services/demoApi'
+
+// 药品识别组件体积较大且只有老人角色使用，异步加载避免其他角色一起买单。
+const MedicineRecognitionView = defineAsyncComponent(() => import('@/views/MedicineRecognitionView.vue'))
 
 const user = computed(() => getCurrentUser())
 const reminders = ref(getTodayReminders(user.value?.id ?? ''))

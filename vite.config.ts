@@ -28,4 +28,20 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rolldownOptions: {
+      output: {
+        // 大型依赖拆成独立 chunk：业务代码更新时这些库命中浏览器缓存，不用重新下载。
+        // vue 优先级必须最高：分组默认会连带捕获依赖，若 element-plus 先匹配，
+        // 会把 Vue 运行时一起吞进去，导致登录页也要加载 element-plus。
+        codeSplitting: {
+          groups: [
+            { name: 'vue-vendor', test: /node_modules[\\/](vue|vue-router|@vue)[\\/]/, priority: 10 },
+            { name: 'echarts', test: /node_modules[\\/](echarts|zrender)[\\/]/, priority: 9 },
+            { name: 'element-plus', test: /node_modules[\\/](element-plus|@element-plus)[\\/]/, priority: 8 },
+          ],
+        },
+      },
+    },
+  },
 })
