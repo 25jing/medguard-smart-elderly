@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0f766e">
+<title>安心药助手 - 智慧养老安全用药</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <div class="boot-splash">
+    <div class="boot-logo">💊</div>
+    <div class="boot-text">正在打开 安心药助手…</div>
+  </div>
+</div>
+<script src="vendor/vue.global.prod.js"></script>
+<script src="js/core.js"></script>
+<script src="js/pages1.js"></script>
+<script src="js/pages2.js"></script>
+<script src="js/app.js"></script>
+<script>
+// PWA 注册（局域网 http 环境下浏览器可能限制 SW，不影响使用）
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+}
+</script>
+</body>
+</html>

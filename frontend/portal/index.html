@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智慧养老安全用药辅助平台 · 入口</title>
+<style>
+  :root{ --teal:#0d9488; --teal-d:#0f766e; --ink:#0f172a; --ink-2:#475569; --muted:#94a3b8;
+         --card:rgba(255,255,255,.88); --line:rgba(15,23,42,.07); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{ font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif; min-height:100vh; color:var(--ink);
+    background:
+      radial-gradient(900px 480px at 12% -8%, rgba(13,148,136,.16), transparent 60%),
+      radial-gradient(800px 460px at 110% 8%, rgba(37,99,235,.12), transparent 55%),
+      linear-gradient(180deg,#f6fafb 0%,#eef4f6 100%);
+    padding:40px 18px 60px; }
+  .wrap{max-width:760px;margin:0 auto}
+  header{text-align:center;margin-bottom:30px}
+  .logo{font-size:56px;line-height:1}
+  h1{font-size:clamp(24px,4.6vw,34px);font-weight:900;letter-spacing:1px;margin-top:12px;
+     background:linear-gradient(92deg,var(--teal-d),#134e4a 45%,#1d4ed8);
+     -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--ink-2);font-size:16px;margin-top:10px}
+  .status{display:flex;gap:14px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+  .pill{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);
+        border-radius:999px;padding:8px 16px;font-size:14px;color:var(--ink-2);box-shadow:0 6px 18px rgba(15,23,42,.06)}
+  .dot{width:10px;height:10px;border-radius:50%;background:#cbd5e1;flex:none}
+  .dot.on{background:#10b981;box-shadow:0 0 0 4px rgba(16,185,129,.18)}
+  .dot.off{background:#ef4444;box-shadow:0 0 0 4px rgba(239,68,68,.15)}
+  .enter{display:block;text-decoration:none;text-align:center;margin:8px auto 0;max-width:480px;
+    background:linear-gradient(135deg,var(--teal-d),var(--teal) 55%,#14b8a6);color:#fff;
+    border-radius:24px;padding:26px 20px;box-shadow:0 18px 40px rgba(13,148,136,.35);
+    transition:transform .16s ease, box-shadow .16s ease}
+  .enter:hover{transform:translateY(-3px);box-shadow:0 24px 52px rgba(13,148,136,.45)}
+  .enter .big{font-size:26px;font-weight:900;letter-spacing:3px}
+  .enter .small{margin-top:8px;font-size:14px;opacity:.92}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;
+        box-shadow:0 10px 26px rgba(15,23,42,.07);padding:22px;margin-top:24px}
+  .card h2{font-size:17px;font-weight:900;display:flex;align-items:center;gap:8px}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14.5px}
+  th,td{padding:10px 8px;border-bottom:1px dashed var(--line);text-align:left}
+  th{color:var(--muted);font-weight:600;font-size:13px}
+  td b{font-variant-numeric:tabular-nums}
+  .tips{color:var(--ink-2);font-size:14px;line-height:2;margin-top:10px}
+  .tips b{color:var(--ink)}
+  .adminline{margin-top:14px;text-align:center;font-size:14px;color:var(--ink-2)}
+  .adminline a{color:var(--teal-d);font-weight:800}
+  footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:34px;line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">💊</div>
+    <h1>智慧养老安全用药辅助平台</h1>
+    <div class="sub">安心药助手 · 一个入口，不同账号登录后进入不同页面</div>
+    <div class="status">
+      <span class="pill"><span class="dot" id="d-backend"></span>业务后端</span>
+      <span class="pill"><span class="dot" id="d-mysql"></span>数据库</span>
+      <span class="pill"><span class="dot" id="d-ai"></span>AI 服务</span>
+    </div>
+  </header>
+
+  <a class="enter" href="/h5/">
+    <div class="big">进 入 平 台</div>
+    <div class="small">用下方任一账号登录 · 老人账号进老人页面，家属账号进家属页面</div>
+  </a>
+
+  <div class="card">
+    <h2>🧪 演示账号（密码均为 <span style="color:#0d9488">123456</span>，登录页也可点芯片一键填入）</h2>
+    <table>
+      <tr><th>账号</th><th>身份</th><th>登录后进入</th></tr>
+      <tr><td><b>13900001111</b></td><td>👴 老人 · 张桂芳(72岁)</td><td>老人端：今日服药提醒 / 拍照识药 / 冲突震动警报 / 问药</td></tr>
+      <tr><td><b>13900002222</b></td><td>👨‍👩‍👧 家属 · 张小芳(女儿)</td><td>家属端：实时风险提醒 / 老人服药概况 / 代办用药计划</td></tr>
+      <tr><td><b>admin</b></td><td>🛡️ 管理员</td><td>提示前往 <a href="/admin/">管理后台</a>（看板 / 药品库 / 规则审核 / 审计）</td></tr>
+    </table>
+    <div class="tips">
+      <b>演示动线：</b>先登老人账号看今日提醒与冲突警报 → 拍照识药新增「布洛芬」触发高危冲突 →
+      退出，登家属账号：风险提醒已实时到达（红色警报+震动）→ 家属「代办用药计划」→ 最后进管理后台看规则库与审计闭环。
+    </div>
+    <div class="adminline">管理后台直达：<a href="/admin/">http://127.0.0.1:8080/admin/</a></div>
+  </div>
+
+  <footer>
+    北方民族大学 · 大学生创新创业训练计划 · 北图科技团队<br>
+    本平台内容仅供科普参考，不能替代医生诊断与医嘱 · 数据脱敏存储，照片即传即删
+  </footer>
+</div>
+
+<script>
+(function () {
+  function light(id, on) { document.getElementById(id).className = 'dot ' + (on ? 'on' : 'off'); }
+  fetch('/api/health').then(function (r) { return r.json(); }).then(function (j) {
+    var ok = j && j.code === 0;
+    var d = (j && j.data) ? j.data : {};
+    light('d-backend', ok && d.backend === 'UP');
+    light('d-mysql', ok && d.db === true);
+    light('d-ai', ok && d.ai === 'UP');
+  }).catch(function () { light('d-backend', false); light('d-mysql', false); light('d-ai', false); });
+})();
+</script>
+</body>
+</html>

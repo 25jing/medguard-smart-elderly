@@ -1,0 +1,32 @@
+{
+  "pages": [
+    { "path": "pages/login/login", "style": { "navigationBarTitleText": "登录", "navigationStyle": "custom" } },
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "安心药助手", "enablePullDownRefresh": true } },
+    { "path": "pages/recognize/recognize", "style": { "navigationBarTitleText": "拍照识药" } },
+    { "path": "pages/qa/qa", "style": { "navigationBarTitleText": "问药助手" } },
+    { "path": "pages/today/today", "style": { "navigationBarTitleText": "今日用药", "enablePullDownRefresh": true } },
+    { "path": "pages/plans/plans", "style": { "navigationBarTitleText": "用药计划" } },
+    { "path": "pages/family/family", "style": { "navigationBarTitleText": "家庭协同" } },
+    { "path": "pages/profile/profile", "style": { "navigationBarTitleText": "我的" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "安心药助手",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f4f7f8"
+  },
+  "tabBar": {
+    "color": "#94a3b8",
+    "selectedColor": "#0d9488",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "fontSize": "16px",
+    "height": "64px",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/today/today", "text": "今日用药" },
+      { "pagePath": "pages/qa/qa", "text": "问药" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  }
+}

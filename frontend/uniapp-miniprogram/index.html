@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+    document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' + (coverSupport ? ',viewport-fit=cover' : '') + '" />')
+  </script>
+  <title>安心药助手</title>
+  <!-- 本文件为 uni-app CLI 工程 H5 预览入口；微信小程序端由 HBuilderX/CLI 编译 src/ 目录，不使用此文件 -->
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

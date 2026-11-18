@@ -1,0 +1,13 @@
+{
+  "name": "安心药助手 - 智慧养老安全用药",
+  "short_name": "安心药助手",
+  "description": "面向老年人的安全用药辅助应用：拍照识药、用药提醒打卡、成分冲突校验、循证问药、家庭协同",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

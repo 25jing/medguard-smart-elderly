@@ -1,0 +1,36 @@
+# ===== 密钥与本地私有配置（严禁提交/打包） =====
+.env
+.env.local
+*.env
+!.env.example
+**/.env
+!**/.env.example
+credentials.yaml
+*.key
+*.pem
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ===== 前端依赖与构建 =====
+node_modules/
+frontend/uniapp-miniprogram/dist/
+frontend/uniapp-miniprogram/unpackage/
+
+# ===== 大模型权重与缓存（体积大，交付单独说明获取方式） =====
+models/hf/
+models/faiss_store/
+*.pt.onnx
+
+# ===== 运行产物 =====
+backend/target/
+logs/
+*.log
+mysql/
+mysql-data/
+backend.log
+ai.log

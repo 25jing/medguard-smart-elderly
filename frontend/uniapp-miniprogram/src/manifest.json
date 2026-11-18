@@ -1,0 +1,22 @@
+{
+  "name": "安心药助手",
+  "appid": "",
+  "description": "智慧养老安全用药辅助平台 · 微信小程序端",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx73667979866e1efa",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.camera": { "desc": "用于拍摄药盒照片完成识药" }
+    },
+    "requiredPrivateInfos": []
+  },
+  "vueVersion": "3"
+}

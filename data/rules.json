@@ -1,0 +1,1442 @@
+[
+ {
+  "ruleCode": "CR-WAR-ASP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "阿司匹林",
+  "riskLevel": "HIGH",
+  "explanation": "华法林和阿司匹林都是抗栓药，一起吃会让出血风险大大增加，可能出现牙龈出血不止、皮下大片瘀斑、黑便甚至脑出血。除非心内科医生特别要求，两药不要自行同服；如医生已开具，请遵医嘱定期查凝血指标(INR)并留意出血迹象。",
+  "basisSource": "华法林与阿司匹林药品说明书【药物相互作用】项；中国心房颤动抗凝治疗专家共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-IBU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "布洛芬",
+  "riskLevel": "HIGH",
+  "explanation": "华法林抗凝期间服用布洛芬等止痛药，胃肠道出血风险显著增加，布洛芬还会增强抗凝效果。吃华法林期间止痛退烧请优先咨询医生或药师，通常对乙酰氨基酚是相对更安全的选择（也需限量）。",
+  "basisSource": "华法林/布洛芬药品说明书【药物相互作用】项；NSAIDs临床应用专家共识",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-GIN",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "银杏叶提取物",
+  "riskLevel": "MEDIUM",
+  "explanation": "银杏叶片/银杏叶保健品有抗血小板作用，与华法林同用可能增加出血风险。服用抗凝药期间，含银杏、丹参类的中成药和保健品请先咨询医生，不要自行加用。",
+  "basisSource": "银杏叶制剂说明书【注意事项】；药物相互作用数据库(华法林-银杏)出血病例报告",
+  "reviewedBy": "依据说明书与文献整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-DAN",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "丹参",
+  "riskLevel": "MEDIUM",
+  "explanation": "复方丹参滴丸等活血中药与华法林同用可能增强抗凝、增加出血风险。服用抗凝药期间加用任何活血类中成药（丹参、银杏、当归等）前，请先问医生或药师。",
+  "basisSource": "复方丹参滴丸说明书【药物相互作用】；中成药与抗凝药相互作用专家共识",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ASP-IBU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "阿司匹林",
+  "drugB": "布洛芬",
+  "riskLevel": "HIGH",
+  "explanation": "布洛芬会抢占阿司匹林的抗血小板作用位点，让阿司匹林护心效果打折扣；两药同用还会成倍增加胃出血风险。心脑血管病患者需要止痛时请先咨询医生；如医生允许同服，一般先服阿司匹林、间隔至少2小时再服布洛芬。",
+  "basisSource": "阿司匹林/布洛芬说明书【药物相互作用】；FDA布洛芬干扰阿司匹林抗血小板作用安全通告",
+  "reviewedBy": "依据说明书与FDA通告整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ACEI-ARB",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "血管紧张素转换酶抑制剂",
+  "drugB": "血管紧张素II受体拮抗剂",
+  "riskLevel": "HIGH",
+  "explanation": "普利类(如卡托普利、依那普利)与沙坦类(如缬沙坦、氯沙坦)同属一套降压系统，两药联用不会带来额外好处，反而显著增加低血压、高血钾和肾损伤风险。降压方案请遵医嘱只用其中一类，不要自行把两种都吃上。",
+  "basisSource": "卡托普利/缬沙坦说明书【禁忌】【药物相互作用】；中国高血压防治指南(不推荐ACEI+ARB联合)",
+  "reviewedBy": "依据指南与说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SPR-KCL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "螺内酯",
+  "drugB": "氯化钾",
+  "riskLevel": "HIGH",
+  "explanation": "螺内酯是保钾利尿剂，再补钾容易造成高钾血症——老人可表现为乏力、手脚发麻、心跳变慢，严重时会心脏骤停。两药必须同用时要在医生指导下定期抽血查电解质。",
+  "basisSource": "螺内酯/氯化钾说明书【禁忌】【注意事项】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ACE-KCL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "血管紧张素转换酶抑制剂",
+  "drugB": "氯化钾",
+  "riskLevel": "MEDIUM",
+  "explanation": "普利类降压药本身会升高血钾，再服氯化钾缓释片或含钾的低钠盐，高钾血症风险叠加。联用期间需要定期查血钾，出现明显乏力、心悸及时就医。",
+  "basisSource": "卡托普利/依那普利说明书【药物相互作用】；氯化钾说明书【注意事项】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-THE-LFX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "茶碱",
+  "drugB": "左氧氟沙星",
+  "riskLevel": "HIGH",
+  "explanation": "左氧氟沙星等沙星类抗生素会减慢茶碱在体内的清除，使茶碱血药浓度升高，容易引起茶碱中毒（恶心呕吐、心慌、手抖，严重时抽搐和心律失常）。两药必须合用时，医生通常会减少茶碱剂量并监测血药浓度，请勿自行搭配。",
+  "basisSource": "茶碱缓释片/左氧氟沙星说明书【药物相互作用】；茶碱类药物临床应用专家共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-OMP-CLO",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "奥美拉唑",
+  "drugB": "氯吡格雷",
+  "riskLevel": "MEDIUM",
+  "explanation": "奥美拉唑会抑制氯吡格雷在体内活化，可能降低其抗血小板、防血栓的效果。支架术后或卒中后服用氯吡格雷的患者如需护胃，可请医生改用对氯吡格雷影响小的泮托拉唑或雷贝拉唑。",
+  "basisSource": "氯吡格雷/奥美拉唑说明书【药物相互作用】；FDA氯吡格雷-奥美拉唑相互作用安全通告",
+  "reviewedBy": "依据说明书与FDA通告整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LTX-CAL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "左甲状腺素",
+  "drugB": "碳酸钙",
+  "riskLevel": "MEDIUM",
+  "explanation": "钙片会明显减少优甲乐(左甲状腺素)的吸收，让甲状腺功能控制不稳。两药服用时间至少间隔4小时：优甲乐早晨空腹服，钙片放到午餐或晚餐后。",
+  "basisSource": "左甲状腺素钠/碳酸钙D3说明书【药物相互作用】；成人甲减诊治指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LTX-FE",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "左甲状腺素",
+  "drugB": "硫酸亚铁",
+  "riskLevel": "MEDIUM",
+  "explanation": "铁剂会与优甲乐结合、减少其吸收。补铁期间，优甲乐与铁剂要间隔4小时以上服用，并定期复查甲功(TSH)。",
+  "basisSource": "左甲状腺素钠/硫酸亚铁说明书【药物相互作用】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-SPR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "螺内酯",
+  "riskLevel": "MEDIUM",
+  "explanation": "螺内酯可升高地高辛血药浓度并减少其排泄，地高辛治疗窗很窄，浓度偏高容易中毒（恶心、黄视绿视、心律失常）。两药常一起用于心衰，但必须在医生指导下定期监测地高辛浓度和血钾。",
+  "basisSource": "地高辛/螺内酯说明书【药物相互作用】；中国心力衰竭诊断和治疗指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-CAL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "碳酸钙",
+  "riskLevel": "MEDIUM",
+  "explanation": "血钙升高会增强地高辛的心脏毒性，增加心律失常风险。服地高辛期间补钙请按常规剂量，避免大剂量静脉补钙，定期监测血钙；出现心慌、心律不齐及时就医。",
+  "basisSource": "地高辛说明书【注意事项】；临床用药须知(洋地黄与钙剂)",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-APAP",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "对乙酰氨基酚",
+  "drugB": "对乙酰氨基酚",
+  "riskLevel": "HIGH",
+  "explanation": "两种药含有相同成分对乙酰氨基酚（扑热息痛），叠加服用容易造成过量，严重可致急性肝损伤。最常见的情况是：吃了泰诺林/必理通又吃复方感冒药(感康、快克、氨酚黄那敏等)。服药前务必看成分表，同成分药只吃一种，每日总量不超过2克（老年人）。",
+  "basisSource": "对乙酰氨基酚及复方氨酚烷胺说明书【成分】【注意事项】；WHO用药安全资料(重复用药)",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-CPM",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "氯苯那敏",
+  "drugB": "氯苯那敏",
+  "riskLevel": "MEDIUM",
+  "explanation": "扑尔敏(氯苯那敏)成分重复：单独吃扑尔敏又吃含扑尔敏的复方感冒药，会加重嗜睡、头晕、口干，老人夜间起床跌倒风险明显增加。含相同成分的感冒药只选一种。",
+  "basisSource": "马来酸氯苯那敏/复方氨酚烷胺说明书【成分】；AGS Beers标准(2023)第一代抗组胺药条目",
+  "reviewedBy": "依据说明书与Beers标准整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-ASA",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "阿司匹林",
+  "drugB": "阿司匹林",
+  "riskLevel": "HIGH",
+  "explanation": "两种药都含阿司匹林成分（例如拜阿司匹灵与含阿司匹林的复方制剂同服），剂量叠加会显著增加胃出血风险。请核对成分表，避免重复。",
+  "basisSource": "阿司匹林肠溶片说明书【成分】【注意事项】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-HCTZ",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "氢氯噻嗪",
+  "drugB": "氢氯噻嗪",
+  "riskLevel": "MEDIUM",
+  "explanation": "氢氯噻嗪成分重复：复方降压药（如复方利血平、厄贝沙坦氢氯噻嗪）里已含氢氯噻嗪，再单吃氢氯噻嗪片会导致利尿过度、低钠低钾、乏力头晕甚至跌倒。服用复方制剂前请看清楚成分。",
+  "basisSource": "氢氯噻嗪片/复方利血平片说明书【成分】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-IBU",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "布洛芬",
+  "drugB": "布洛芬",
+  "riskLevel": "MEDIUM",
+  "explanation": "布洛芬成分重复（单方芬必得+含布洛芬的复方感冒药），叠加后胃肠道与肾脏不良反应增加。同成分退热止痛药只吃一种。",
+  "basisSource": "布洛芬缓释胶囊说明书【成分】【注意事项】",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-CCB",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "钙通道阻滞剂",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "同时在吃两种地平类降压药（如氨氯地平+硝苯地平），属于同类叠加：降压过度可能头晕跌倒，脚踝水肿也会加重。同一类降压药通常只用一种，调整方案请找医生，不要自行加药。",
+  "basisSource": "氨氯地平/硝苯地平说明书【药理毒理】；中国老年高血压管理指南(联合用药原则)",
+  "reviewedBy": "依据指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-STATIN",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "他汀类",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "两种他汀（如阿托伐他汀+辛伐他汀）同服不会让降脂效果更好，却使肌肉损伤和横纹肌溶解风险成倍增加——出现全身肌肉酸痛、乏力、酱油色尿要立即停药就医。他汀只用一种，剂量调整遵医嘱。",
+  "basisSource": "阿托伐他汀/辛伐他汀说明书【注意事项】；中国血脂管理指南(2023)",
+  "reviewedBy": "依据指南与说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-BZD",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "苯二氮卓类",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "同时使用两种安定类药（如地西泮+艾司唑仑+阿普唑仑中任意两种），镇静作用叠加：老人跌倒骨折、白天嗜睡、记忆力和意识受影响的风险都很高，还可能抑制呼吸。安眠抗焦虑药请只用医生开的一种，并尽量短期使用。",
+  "basisSource": "地西泮/艾司唑仑/阿普唑仑说明书【注意事项】；AGS Beers标准(2023)；中国老年人潜在不适当用药判断标准(2017年版)",
+  "reviewedBy": "依据Beers/PIM标准整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-NSAID",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "非甾体抗炎药",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "两种消炎止痛药同吃（如布洛芬+双氯芬酸，或阿司匹林+布洛芬长期同服），止痛效果不叠加，胃出血、肾损伤风险却成倍上升。老年人慢性疼痛用药请让医生评估，一种不够时优先考虑其他治疗方式，而不是自行加第二种。",
+  "basisSource": "布洛芬/双氯芬酸说明书【注意事项】；AGS Beers标准(2023)NSAIDs条目",
+  "reviewedBy": "依据Beers标准与说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-SU",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "磺脲类",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "两种磺脲类降糖药同服（如格列美脲+格列齐特+格列本脲中任意两种）会显著增加严重低血糖风险——老人低血糖可致昏迷、跌倒、心梗。同类促泌剂只用一种；出现心慌、出汗、手抖立即吃糖并测血糖。",
+  "basisSource": "格列美脲/格列齐特说明书【注意事项】；中国2型糖尿病防治指南(2020)",
+  "reviewedBy": "依据指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-PPI",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "质子泵抑制剂",
+  "drugB": "",
+  "riskLevel": "LOW",
+  "explanation": "两种拉唑类护胃药同服（如奥美拉唑+兰索拉唑）没有额外好处，反而增加长期用药的骨折、低镁、维生素B12缺乏风险。护胃药选一种即可，并定期请医生评估是否还需要继续吃。",
+  "basisSource": "奥美拉唑/兰索拉唑说明书；质子泵抑制剂临床合理使用专家共识",
+  "reviewedBy": "依据共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-DZP",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "地西泮",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "安定(地西泮)在老年人属于潜在不适当用药：半衰期长，容易在体内蓄积，导致白天嗜睡、意识模糊、夜间跌倒骨折，长期服用还会依赖。老年人失眠焦虑优先找原因、用非药物方法（睡眠卫生、认知行为治疗）；必须用药时由医生选择小剂量短效方案并限期使用。",
+  "basisSource": "中国老年人潜在不适当用药判断标准(2017年版)；AGS Beers标准(2023)苯二氮卓类条目",
+  "reviewedBy": "依据PIM 2017/Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-EST",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "艾司唑仑",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "舒乐安定用于老人失眠需谨慎：虽比长效安定好些，但仍增加夜间起床跌倒、次晨宿醉(头晕乏力)风险。建议短期(不超过2-4周)、小剂量(0.5-1mg)使用，床边备夜灯与扶手，并在医生指导下逐步减停。",
+  "basisSource": "中国老年人潜在不适当用药判断标准(2017年版)；中国失眠障碍诊断和治疗指南",
+  "reviewedBy": "依据PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-ZOL",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "唑吡坦",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "思诺思(唑吡坦)在老年人并不比安定类更安全：Beers标准明确建议避免，跌倒、骨折、谵妄风险高，还可能出现睡行症等复杂睡眠行为（夜里活动、进食甚至外出而醒后无记忆）。老人失眠首选非药物治疗；已服用者勿加量，出现异常睡眠行为立即停药就医。",
+  "basisSource": "AGS Beers标准(2023)非苯二氮卓类催眠药(Z-drugs)条目；唑吡坦说明书【注意事项】",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-AMI",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "阿米替林",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "阿米替林是三环类抗抑郁药，老年人应避免：抗胆碱作用强（口干、便秘、尿潴留、视物模糊、意识模糊谵妄），还引起体位性低血压跌倒和心脏传导问题。老年抑郁可由医生改用舍曲林、艾司西酞普兰等更安全的药物；用于慢性疼痛的小剂量方案也应由专科评估。",
+  "basisSource": "AGS Beers标准(2023)三环类抗抑郁药条目；中国老年人潜在不适当用药判断标准(2017年版)",
+  "reviewedBy": "依据Beers 2023/PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-CPM",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "氯苯那敏",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "扑尔敏属第一代抗组胺药，老年人应避免长期使用：嗜睡、头晕明显增加跌倒风险，抗胆碱作用可致口干、便秘、排尿困难、意识模糊，且老人清除慢、作用更强。过敏症状请优先选择氯雷他定、西替利嗪等第二代药物。",
+  "basisSource": "AGS Beers标准(2023)第一代抗组胺药条目",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-GLB",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "格列本脲",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "优降糖(格列本脲)是老年人最危险的降糖药之一：作用强而持久，老人肾功能减退时严重低血糖发生率在磺脲类中最高，低血糖可导致昏迷、跌倒骨折、诱发心梗脑梗。国内外老年标准均建议避免使用，可请医生换成格列齐特缓释片、瑞格列奈或DPP-4抑制剂等低血糖风险小的药。",
+  "basisSource": "AGS Beers标准(2023)磺脲类条目；中国老年人潜在不适当用药判断标准(2017年版)",
+  "reviewedBy": "依据Beers 2023/PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-GLM",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "格列美脲",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "格列美脲在老年人低血糖风险高于多数新型降糖药，Beers标准建议避免作为老年患者一线选择。使用时务必：从小剂量开始、规律进餐（漏餐绝不服药）、随身带糖果、家人知晓低血糖表现（心慌出汗手抖→立即进食含糖食物）。",
+  "basisSource": "AGS Beers标准(2023)；格列美脲说明书【注意事项】",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-NIF",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "硝苯地平片",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "速释硝苯地平(心痛定)口服或舌下含服会让血压骤降、心率反射性加快，可能诱发脑缺血、心绞痛甚至卒中，老年人尤其危险，国内外标准均列为应避免使用。血压高请就医调整方案，改用氨氯地平、硝苯地平控释片等长效平稳的降压药；血压突然明显升高伴不适请直接就医，不要自行含服心痛定。",
+  "basisSource": "中国老年人潜在不适当用药判断标准(2017年版)；硝苯地平速释制剂相关安全性警示",
+  "reviewedBy": "依据PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-DIG",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "地高辛",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "地高辛治疗窗窄，老年人肾功能减退易蓄积中毒（恶心呕吐、食欲差、看东西发黄发绿、心律失常）。Beers标准建议老年人日剂量不超过0.125mg，并定期监测血药浓度、血钾和肾功能；漏服不可加倍，腹泻呕吐脱水时暂停并就医。",
+  "basisSource": "AGS Beers标准(2023)地高辛剂量条目；地高辛说明书【注意事项】",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-RSP",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "利血平",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "含利血平的复方降压片（如复方利血平、降压0号）在老年人属潜在不适当用药：可诱发或加重抑郁、乏力、鼻塞、消化道溃疡出血和帕金森样症状。老年高血压已有更安全有效的长效药（地平类、普利/沙坦类、利尿剂），建议请医生评估更换。",
+  "basisSource": "中国老年人潜在不适当用药判断标准(2017年版)利血平条目",
+  "reviewedBy": "依据PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-TRA",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "曲马多",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "曲马多用于老人要注意：头晕嗜睡增加跌倒风险，可引起低钠血症（乏力、恶心、意识模糊）和癫痫发作风险，与抗抑郁药（舍曲林、文拉法辛等）合用有5-羟色胺综合征风险。老年人慢性疼痛请先评估病因，用药从小剂量开始，避免长期使用。",
+  "basisSource": "AGS Beers标准(2023)曲马多条目(低钠/SIADH)；曲马多说明书【注意事项】",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-DOM",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "多潘立酮",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "吗丁啉(多潘立酮)有QT间期延长和严重心律失常风险，各国药监已限制：60岁以上或体重<50kg者每日不超过30mg、疗程不超过1周，有心脏病、电解质紊乱或合用胺碘酮/沙星类者避免使用。老人腹胀消化不良可先调整饮食，需药物时请医生评估。",
+  "basisSource": "EMA/NMPA多潘立酮心脏风险警示；多潘立酮说明书【注意事项】",
+  "reviewedBy": "依据药监警示整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-PPI",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "质子泵抑制剂",
+  "drugB": "",
+  "riskLevel": "LOW",
+  "explanation": "拉唑类护胃药（奥美拉唑、兰索拉唑、泮托拉唑）长期使用超过8周与骨折、低镁血症、维生素B12缺乏和肠道感染风险增加相关，老年人更明显。多数情况不需要无限期服用：症状控制后请让医生评估减停或按需服用，长期使用者定期查血镁。",
+  "basisSource": "AGS Beers标准(2023)PPI条目；质子泵抑制剂临床合理使用专家共识",
+  "reviewedBy": "依据Beers 2023与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-NSAID-CHRONIC",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "非甾体抗炎药",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "老年人长期口服布洛芬、双氯芬酸等消炎止痛药应避免：消化道溃疡出血、肾损伤、血压升高和心血管事件风险都随年龄增加。确需长期使用（如关节炎）应由医生评估，并同时加用护胃药(PPI)、用最低有效剂量、定期查大便隐血和肾功能。",
+  "basisSource": "AGS Beers标准(2023)NSAIDs条目；NSAIDs临床应用专家共识",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-AMI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "胺碘酮",
+  "riskLevel": "HIGH",
+  "explanation": "胺碘酮会明显减慢华法林的代谢，两者同服抗凝作用可增强三分之一以上，INR升高、出血风险大增。必须合用时需由医生减少华法林剂量并加密监测凝血指标，出现牙龈出血、瘀斑、黑便立即就医。",
+  "basisSource": "华法林钠片说明书【药物相互作用】；胺碘酮片说明书；中国华法林抗凝治疗专家共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素等抗生素会抑制华法林代谢并减少肠道产维生素K的菌群，同服期间出血风险显著升高。需医生评估、加强INR监测，不可自行同时服用。",
+  "basisSource": "华法林钠片说明书；克拉霉素片说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-FLU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "氟康唑",
+  "riskLevel": "HIGH",
+  "explanation": "氟康唑是强效代谢抑制剂，与华法林同服可使抗凝作用明显增强、持续时间长，曾有多发严重出血报告。联用必须由医生调整剂量并监测INR。",
+  "basisSource": "华法林钠片说明书；氟康唑胶囊说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-SMX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "复方磺胺甲噁唑",
+  "riskLevel": "HIGH",
+  "explanation": "复方磺胺甲噁唑（磺胺类消炎药）会置换华法林并结合减少其代谢，两者同服出血风险成倍增加，是老年人最常见的严重出血性相互作用之一。",
+  "basisSource": "华法林钠片说明书；复方磺胺甲噁唑片说明书；老年用药安全Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-RIF",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "利福平",
+  "riskLevel": "MEDIUM",
+  "explanation": "利福平强烈加速华法林代谢，同服会让抗凝作用明显减弱、血栓风险上升；停用利福林后作用又会反弹增强。调整任何一端都必须加密监测INR。",
+  "basisSource": "华法林钠片说明书；利福平说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-CIP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "环丙沙星",
+  "riskLevel": "MEDIUM",
+  "explanation": "环丙沙星等喹诺酮类抗生素可增强华法林抗凝作用，老年人合用期间INR可能明显波动，应监测凝血指标并注意出血迹象。",
+  "basisSource": "华法林钠片说明书；环丙沙星说明书；抗凝门诊管理规范",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-LEV",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "左氧氟沙星",
+  "riskLevel": "MEDIUM",
+  "explanation": "左氧氟沙星与华法林合用可增强抗凝效果，个别报道INR大幅升高。用药期间请留意瘀斑、血尿、黑便，并按医嘱复查凝血。",
+  "basisSource": "华法林钠片说明书；左氧氟沙星说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-NIT-SIL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "硝酸甘油",
+  "drugB": "西地那非",
+  "riskLevel": "HIGH",
+  "explanation": "硝酸酯类（硝酸甘油、消心痛）与西地那非类药物同服会引起危及生命的严重低血压，属于绝对禁忌：服用西地那非24小时内（他达拉非48小时内）任何胸痛都不可舌下含服硝酸甘油，须立即就医并告知医生用药史。",
+  "basisSource": "硝酸甘油片说明书；西地那非片说明书【禁忌】项；AHA科学声明",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ISO-SIL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "单硝酸异山梨酯",
+  "drugB": "西地那非",
+  "riskLevel": "HIGH",
+  "explanation": "单硝酸异山梨酯（长效护心药）与西地那非合用可致重度低血压、晕厥甚至死亡，属说明书明确禁忌。",
+  "basisSource": "单硝酸异山梨酯缓释片说明书；西地那非片说明书【禁忌】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-NIT-TAD",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "硝酸甘油",
+  "drugB": "他达拉非",
+  "riskLevel": "HIGH",
+  "explanation": "他达拉非作用时间长，与硝酸甘油类同服严重低血压风险可持续48小时，说明书列为禁忌；如确需硝酸酯救治必须间隔足够时间并由医生监护。",
+  "basisSource": "他达拉非片说明书；硝酸甘油片说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-AMI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "胺碘酮",
+  "riskLevel": "HIGH",
+  "explanation": "胺碘酮会使地高辛血药浓度升高近一倍，老年人极易发生洋地黄中毒（恶心、视物发黄、心律变慢或不规则）。合用时地高辛通常需减半并监测血药浓度与心率。",
+  "basisSource": "地高辛片说明书；胺碘酮片说明书【药物相互作用】项；中国心衰指南",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-VER",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "维拉帕米",
+  "riskLevel": "MEDIUM",
+  "explanation": "维拉帕米升高地高辛血药浓度并抑制房室传导，同服心动过缓与中毒风险增加，需减量监测心率和地高辛浓度。",
+  "basisSource": "地高辛片说明书；维拉帕米说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-FUR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "呋塞米",
+  "riskLevel": "MEDIUM",
+  "explanation": "呋塞米排钾造成低钾血症，会显著增加地高辛中毒风险（心律失常）。两药合用需定期查电解质、必要时补钾并监测心率。",
+  "basisSource": "地高辛片说明书；呋塞米说明书；利尿剂临床应用专家共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-IND",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "吲达帕胺",
+  "riskLevel": "MEDIUM",
+  "explanation": "吲达帕胺引起低钾时可诱发地高辛中毒和恶性心律失常，合用需监测血钾与心率。",
+  "basisSource": "地高辛片说明书；吲达帕胺说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-COL-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "秋水仙碱",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素阻断秋水仙碱代谢，老年人合用可发生致命性秋水仙碱中毒（严重腹泻、骨髓抑制、肌肉损伤）。痛风患者请勿在服用克拉霉素期间自行加用秋水仙碱。",
+  "basisSource": "秋水仙碱片说明书【药物相互作用】；FDA秋水仙碱安全警示",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-COL-VER",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "秋水仙碱",
+  "drugB": "维拉帕米",
+  "riskLevel": "MEDIUM",
+  "explanation": "维拉帕米抑制P-糖蛋白使秋水仙碱蓄积，肌痛、麻木或乏力时须警惕中毒并停药就医。",
+  "basisSource": "秋水仙碱片说明书；Beers标准药物相互作用清单",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素使辛伐他汀血药浓度升高数倍，横纹肌溶解和急性肾衰风险显著增加，说明书明确禁止合用；需抗生素时请医生更换不相互感染的品种或暂停他汀。",
+  "basisSource": "辛伐他汀片说明书【禁忌】；FDA辛伐他汀安全性修订",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-ITR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "伊曲康唑",
+  "riskLevel": "HIGH",
+  "explanation": "伊曲康唑等抗真菌药强烈抑制他汀代谢，与辛伐他汀合用横纹肌溶解风险高，说明书禁忌联用。",
+  "basisSource": "辛伐他汀片说明书【禁忌】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-ERI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "红霉素",
+  "riskLevel": "HIGH",
+  "explanation": "红霉素与辛伐他汀同服显著升高他汀浓度，肌病与横纹肌溶解风险大增，应避免合用。",
+  "basisSource": "辛伐他汀片说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LOV-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "洛伐他汀",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "洛伐他汀与克拉霉素同禁忌类：浓度剧增、横纹肌溶解风险高，合用需换药或暂停。",
+  "basisSource": "洛伐他汀说明书【禁忌】；FDA他汀类安全警示",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-DIL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "地尔硫氮",
+  "riskLevel": "MEDIUM",
+  "explanation": "地尔硫氮升高辛伐他汀浓度，肌病风险增加；合用时辛伐他汀每日一般不超过10mg，出现肌肉酸痛乏力立即就医。",
+  "basisSource": "辛伐他汀片说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ROS-GEM",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "瑞舒伐他汀",
+  "drugB": "吉非罗齐",
+  "riskLevel": "HIGH",
+  "explanation": "吉非罗齐明显升高他汀血药浓度，横纹肌溶解风险高，瑞舒伐他汀说明书禁止或与剂量封顶合用；降脂方案请医生重新设计。",
+  "basisSource": "瑞舒伐他汀钙片说明书；吉非罗齐说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-FEN",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "非诺贝特",
+  "riskLevel": "MEDIUM",
+  "explanation": "他汀与贝特类降脂药合用肌病风险叠加，应小剂量、监测肌酶与肌痛症状，避免剧烈运动加重。",
+  "basisSource": "辛伐他汀片说明书；中国血脂管理指南",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LIT-IBU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "碳酸锂",
+  "drugB": "布洛芬",
+  "riskLevel": "HIGH",
+  "explanation": "布洛芬等止痛药减少锂排泄，可使血锂升中毒（手抖加重、呕吐、走路不稳、意识模糊），锂治疗窗窄务必避免自行合用。",
+  "basisSource": "碳酸锂片说明书【药物相互作用】；锂盐治疗监测共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LIT-HCTZ",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "碳酸锂",
+  "drugB": "氢氯噻嗪",
+  "riskLevel": "HIGH",
+  "explanation": "噻嗪类利尿剂减少锂排出，常在加用后数天发生锂中毒，老年人尤其危险，需要医生下调锂剂量并监测血锂浓度。",
+  "basisSource": "碳酸锂片说明书；氢氯噻嗪说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LIT-CAP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "碳酸锂",
+  "drugB": "卡托普利",
+  "riskLevel": "HIGH",
+  "explanation": "普利类降压药可使血锂升高导致中毒，联合使用时需加密血锂监测并观察手抖、嗜睡、步态不稳等表现。",
+  "basisSource": "碳酸锂片说明书；卡托普利片说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CAR-ERI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "卡马西平",
+  "drugB": "红霉素",
+  "riskLevel": "HIGH",
+  "explanation": "红霉素抑制卡马西平代谢，可致头晕、复视、走路不稳等中毒表现，换抗生素时需医生调整抗癫痫药剂量并监测浓度。",
+  "basisSource": "卡马西平片说明书；红霉素说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PHT-CAR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "苯妥英钠",
+  "drugB": "卡马西平",
+  "riskLevel": "MEDIUM",
+  "explanation": "两种抗癫痫药互相诱导代谢，血药浓度波动大、毒性反应（共济失调、眼球震颤）风险增加，联合方案需神经科医生制定。",
+  "basisSource": "苯妥英钠说明书；卡马西平片说明书；抗癫痫药联合应用指南",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-INH-CAR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "异烟肼",
+  "drugB": "卡马西平",
+  "riskLevel": "MEDIUM",
+  "explanation": "异烟肼抑制卡马西平代谢，可出现头晕嗜睡协调差等中毒症状，抗结核治疗期间需监测血药浓度。",
+  "basisSource": "卡马西平片说明书【药物相互作用】；抗结核治疗规范",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-THE-CIP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "茶碱",
+  "drugB": "环丙沙星",
+  "riskLevel": "HIGH",
+  "explanation": "环丙沙星显著减慢茶碱清除，易致茶碱中毒（呕吐、心悸、抽搐）。老年人平喘药与抗生素合用必须医生把关。",
+  "basisSource": "茶碱缓释片说明书；环丙沙星说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-THE-ERI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "茶碱",
+  "drugB": "红霉素",
+  "riskLevel": "HIGH",
+  "explanation": "红霉素类抗生素可使茶碱血浓度升高约四分之一以上，出现恶心、心悸、手抖时应警惕中毒并就医。",
+  "basisSource": "茶碱缓释片说明书；红霉素说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-FEB-THE",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "非布司他",
+  "drugB": "茶碱",
+  "riskLevel": "HIGH",
+  "explanation": "非布司他抑制黄嘌呤氧化酶，使茶碱代谢受阻浓度倍增，说明书禁止合用；哮喘老人降尿酸请医生另选方案。",
+  "basisSource": "非布司他片说明书【禁忌】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-RIV-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "利伐沙班",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素同时抑制利伐沙班代谢与P-糖蛋白，抗凝暴露明显增加、出血风险上升，老年人应避免联用或加强监护。",
+  "basisSource": "利伐沙班片说明书【药物相互作用】；直接口服抗凝药中国专家共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DAB-VER",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "达比加群",
+  "drugB": "维拉帕米",
+  "riskLevel": "MEDIUM",
+  "explanation": "维拉帕米升高达比加群暴露量，肾功能偏差的老人出血风险增加，合用时达比加群需减量并观察出血征象。",
+  "basisSource": "达比加群酯胶囊说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SER-TRA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "舍曲林",
+  "drugB": "曲马多",
+  "riskLevel": "HIGH",
+  "explanation": "舍曲林与曲马多同服可能诱发5-羟色胺综合征（高热、肌张力高、意识改变、抽搐），亦可降低癫痫阈值，止痛请选不冲突方案并遵医嘱。",
+  "basisSource": "舍曲林说明书；盐酸曲马多片说明书【禁忌/相互作用】；FDA安全警示",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PAR-TRA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "帕罗西汀",
+  "drugB": "曲马多",
+  "riskLevel": "HIGH",
+  "explanation": "帕罗西汀强抑制CYP2D6并叠加5-羟色胺作用：与曲马多合用既有中毒综合征风险又使止痛失效，属应避免组合。",
+  "basisSource": "帕罗西汀片说明书；曲马多说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DOM-AMI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "多潘立酮",
+  "drugB": "胺碘酮",
+  "riskLevel": "HIGH",
+  "explanation": "两药都可延长QT间期，合用时尖端扭转型室性心动过速风险叠加，老年人电解质紊乱时更危险，应避免联用。",
+  "basisSource": "多潘立酮片说明书（EMA限制性修订）；胺碘酮说明书【药物相互作用】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DOM-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "多潘立酮",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素抑制多潘立酮代谢使其浓度剧增并叠加心脏电传导风险，说明书禁止合用。",
+  "basisSource": "多潘立酮片说明书【禁忌】；克拉霉素说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MOX-AMI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "莫西沙星",
+  "drugB": "胺碘酮",
+  "riskLevel": "HIGH",
+  "explanation": "莫西沙星与胺碘酮均延长QT间期，联合可致恶性心律失常，老年心脏病患者应避免；确需抗感染请医生换用不影响QT的品种。",
+  "basisSource": "莫西沙星说明书【禁忌】；胺碘酮片说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SPI-CAP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "螺内酯",
+  "drugB": "卡托普利",
+  "riskLevel": "HIGH",
+  "explanation": "螺内酯（安体舒通）与普利/沙坦类同服血钾可急剧升高，老年人肾功能减退时更高危：可致乏力、心律异常甚至心脏骤停，须医生评估并定期查血钾肾功能。",
+  "basisSource": "螺内酯片说明书；卡托普利片说明书【药物相互作用】；RAAS抑制剂联用共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SPI-VAL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "螺内酯",
+  "drugB": "缬沙坦",
+  "riskLevel": "MEDIUM",
+  "explanation": "保钾利尿剂与沙坦类合用高钾血症风险上升，尤其糖尿病或肾功能不全老人，须定期监测血钾并留意乏力、心律不齐。",
+  "basisSource": "螺内酯片说明书；缬沙坦胶囊说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MTX-IBU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "甲氨蝶呤",
+  "drugB": "布洛芬",
+  "riskLevel": "HIGH",
+  "explanation": "NSAIDs减少甲氨蝶呤排泄，即使小剂量每周方案也可发生骨髓抑制、口腔溃疡、肾损伤等严重毒性，关节炎止痛请医生选择替代药。",
+  "basisSource": "甲氨蝶呤片说明书；布洛芬说明书【药物相互作用】；风湿病学用药共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MTX-PPI",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "甲氨蝶呤",
+  "drugB": "奥美拉唑",
+  "riskLevel": "MEDIUM",
+  "explanation": "质子泵抑制剂可延迟甲氨蝶呤清除，大剂量治疗时禁止合用，小剂量长期方案需监测血象与肝肾功。",
+  "basisSource": "甲氨蝶呤片说明书；奥美拉唑肠溶胶囊说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PRE-IBU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "泼尼松",
+  "drugB": "布洛芬",
+  "riskLevel": "HIGH",
+  "explanation": "激素与NSAIDs合用消化道溃疡出血风险成倍增加（两种伤胃机制叠加），老人必须联用时应加用护胃药并监测黑便腹痛。",
+  "basisSource": "泼尼松片说明书；布洛芬说明书【药物相互作用】；NSAIDs临床安全共识",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DEX-INDO",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地塞米松",
+  "drugB": "吲哚美辛",
+  "riskLevel": "HIGH",
+  "explanation": "糖皮质激素叠加吲哚美辛（强效止痛药）使胃肠出血与穿孔风险显著升高，老年人应避免该组合。",
+  "basisSource": "吲哚美辛说明书【禁忌】；Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-GLB-SMX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "格列本脲",
+  "drugB": "复方磺胺甲噁唑",
+  "riskLevel": "HIGH",
+  "explanation": "磺胺类置换格列本脲并减少其代谢，联用可发生严重而持久的低血糖（出冷汗、意识模糊、昏迷），老年糖尿病患者尤其危险。",
+  "basisSource": "格列本脲片说明书；复方磺胺甲噁唑说明书；Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-GLI-FLU",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "格列本脲",
+  "drugB": "氟康唑",
+  "riskLevel": "MEDIUM",
+  "explanation": "氟康唑抑制格列本脲代谢，低血糖风险明显上升，抗真菌治疗期间应加强血糖监测或调整降糖方案。",
+  "basisSource": "格列本脲片说明书【药物相互作用】；氟康唑说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MET-IOP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "二甲双胍",
+  "drugB": "碘海醇",
+  "riskLevel": "HIGH",
+  "explanation": "含碘造影检查会使二甲双胍蓄积诱发乳酸酸中毒：肾功能正常者造影前后需按医嘱暂停二甲双胍48小时，复查肾功能正常后再恢复。",
+  "basisSource": "盐酸二甲双胍说明书【禁忌】；碘海醇注射液说明书；对比剂使用指南",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-TAM-SIL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "坦索罗辛",
+  "drugB": "西地那非",
+  "riskLevel": "MEDIUM",
+  "explanation": "α受体阻滞剂与PDE5抑制剂均有降压作用，合用可致体位性低血压、晕厥，老人起身宜缓，两药服用时间建议错开。",
+  "basisSource": "坦索罗辛缓释胶囊说明书；西地那非片说明书【药物相互作用】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-VER-MET",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "维拉帕米",
+  "drugB": "美托洛尔",
+  "riskLevel": "HIGH",
+  "explanation": "非二氢吡啶类钙拮抗剂与β受体阻滞剂静脉联用是禁忌，口服合用也可致严重心动过缓、传导阻滞和心衰，须心电监护下由专科医生决策。",
+  "basisSource": "维拉帕米说明书【药物相互作用】；美托洛尔缓释片说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIL-MET",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地尔硫氮",
+  "drugB": "美托洛尔",
+  "riskLevel": "MEDIUM",
+  "explanation": "地尔硫氮与倍他乐克合用抑制心脏传导与收缩力，心率低于55次/分或头晕乏力时须尽快复诊调整。",
+  "basisSource": "地尔硫氮说明书；琥珀酸美托洛尔缓释片说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-SSRI",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "SSRI类抗抑郁药",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "同时使用两种SSRI类抗抑郁药不会增加疗效，反而叠加5-羟色胺综合征与出血风险，请核对是否不同科室重复开药。",
+  "basisSource": "抗抑郁药临床应用指南；药品说明书类药物相互作用项",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-QUIN",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "喹诺酮",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "两种喹诺酮类消炎药同用属重复用药：不良反应（QT延长、肌腱损伤、中枢兴奋）叠加而疗效不增加，请遵医嘱保留一种。",
+  "basisSource": "抗菌药物临床应用指导原则；喹诺酮类说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-MACRO",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "大环内酯类",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "大环内酯类抗生素（红霉素/克拉霉素/阿奇霉素）叠加会显著增加胃肠道反应、QT延长与肝毒性，属重复用药。",
+  "basisSource": "抗菌药物临床应用指导原则；大环内酯类说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-NOAC",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "口服抗凝药",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "同时服用两种口服抗凝药（如利伐沙班+达比加群）大出血风险倍增，除换药过渡期外属明确禁忌，请立即联系医生。",
+  "basisSource": "直接口服抗凝药中国专家共识；各药说明书【药物相互作用】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-ANTIPLT",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "抗血小板药",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "阿司匹林+氯吡格雷等双联抗血小板须有明确心脏支架/急性冠脉综合征指征并限定疗程，若是不同医生分别开具请主动核对，防止无指征叠加出血风险。",
+  "basisSource": "抗血小板治疗中国专家共识；药品说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-NSAID2",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "非甾体抗炎药",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "两种止痛消炎药同服（如布洛芬+双氯芬酸）胃肠道出血与肾损伤风险叠加、疗效不增加，包括外用贴膏也应计入总量。",
+  "basisSource": "NSAIDs临床应用专家共识；老年合理用药Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-FURO",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "呋塞米",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "强效利尿剂在老年人易致脱水、电解质紊乱与低血压跌倒：建议晨间服用避免夜起，按医嘱定期查血钾血钠并记录体重变化。",
+  "basisSource": "呋塞米说明书【老年用药】；老年合理用药Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-PRED",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "泼尼松",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "老年人长期口服激素可致骨质疏松、血糖血压升高、白内障与感染风险增加，须按医嘱逐步减量，不可自行骤停或长期大剂量。",
+  "basisSource": "泼尼松片说明书【老年用药】；糖皮质激素临床应用指导原则",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-SPI",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "螺内酯",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "螺内酯在老年人易引起高钾血症与男性乳房发育，肾功能减退者风险更高，请定期复查电解质与肾功能。",
+  "basisSource": "螺内酯片说明书【老年用药】；Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-CIM",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "西咪替丁",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "西咪替丁易透过血脑屏障，老年人可出现头晕、意识模糊等中枢反应，且相互作用多，抑酸可选肾安全性更好的替代。",
+  "basisSource": "西咪替丁说明书【老年用药】；Beers标准（潜在 inappropriate）",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-LOP",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "洛哌丁胺",
+  "drugB": "",
+  "riskLevel": "LOW",
+  "explanation": "强力止泻药在老年人可致明显便秘、尿潴留与腹胀，感染性腹泻不宜使用，连续自用不超过2天。",
+  "basisSource": "洛哌丁胺说明书【老年用药】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-FIN",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "非那雄胺",
+  "drugB": "",
+  "riskLevel": "LOW",
+  "explanation": "非那雄胺会使PSA指标减半，体检解读前列腺癌筛查结果时需告知医生正在服药，以免延误判断。",
+  "basisSource": "非那雄胺片说明书【注意事项】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-TAM",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "坦索罗辛",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "α受体阻滞剂常见体位性低血压：夜间起夜请先在床边坐一会儿再站起，头晕反复出现应复诊调药。",
+  "basisSource": "坦索罗辛缓释胶囊说明书【不良反应/老年用药】",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-VER",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "维拉帕米",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "维拉帕米在老年人易致便秘（严重可肠梗阻）、心动过缓与心衰加重，心功能不全者应避免，注意监测心率。",
+  "basisSource": "维拉帕米说明书【老年用药】；Beers标准",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-LIT",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "碳酸锂",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "锂盐安全范围极窄，老年人脱水、腹泻或换药时极易中毒：务必规律复查血锂浓度，出现手抖加重、呕吐、口齿不清立即就医。",
+  "basisSource": "碳酸锂片说明书【药物过量/老年用药】；心境障碍诊疗指南",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-MTX",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "甲氨蝶呤",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "甲氨蝶呤每周一次服用（切勿按日误服！），老年肾功能减退者毒性更明显，需按医嘱补充叶酸并定期查血象肝肾功能。",
+  "basisSource": "甲氨蝶呤片说明书；风湿免疫病用药安全教育",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-SILD",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "西地那非",
+  "drugB": "西地那非",
+  "riskLevel": "HIGH",
+  "explanation": "检测到两份同成分药物（如万艾可与其它西地那非制剂/保健品同用），过量可致严重低血压与视觉异常，请只保留医生开具的一份。",
+  "basisSource": "西地那非片说明书【药物过量】；联合用药核查规范",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-AMINO",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "氨氯地平",
+  "drugB": "左旋氨氯地平",
+  "riskLevel": "MEDIUM",
+  "explanation": "氨氯地平与左氨氯地平属同一类降压药（左旋为其活性成分），同时服用相当于双倍剂量，可致踝部水肿与低血压，请核对是否重复。",
+  "basisSource": "苯磺酸氨氯地平片说明书；左氨氯地平说明书",
+  "reviewedBy": "依据说明书与共识整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-MNZ",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "甲硝唑",
+  "riskLevel": "HIGH",
+  "explanation": "甲硝唑抑制S-华法林代谢，可显著延长INR、增加出血风险，说明书建议尽量避免合用。如感染必须用甲硝唑，请医生评估暂停或减少华法林剂量并加强INR监测。",
+  "basisSource": "华法林与甲硝唑药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-WAR-MOX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "华法林",
+  "drugB": "莫西沙星",
+  "riskLevel": "HIGH",
+  "explanation": "喹诺酮类抗生素（莫西沙星）可增强华法林抗凝效果，加之其影响肠道菌群减少维生素K合成，老年人出血风险明显升高。合用期间需监测INR，留意牙龈出血、瘀斑、黑便。",
+  "basisSource": "莫西沙星药品说明书【药物相互作用】项；抗菌药物临床应用指导原则",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素抑制P-糖蛋白，可使地高辛血药浓度升高约一倍，容易引发地高辛中毒（恶心呕吐、视物发黄发绿、心律失常）。合用需减地高辛剂量并监测血药浓度与心电图，老年人尤应警惕。",
+  "basisSource": "地高辛与克拉霉素药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DIG-ITR",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "地高辛",
+  "drugB": "伊曲康唑",
+  "riskLevel": "MEDIUM",
+  "explanation": "伊曲康唑抑制P-糖蛋白使地高辛浓度升高，且有负性肌力作用可能加重心衰。合用时监测地高辛浓度与心功能，必要时减量。",
+  "basisSource": "伊曲康唑与地高辛药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-SIM-GEM",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "辛伐他汀",
+  "drugB": "吉非罗齐",
+  "riskLevel": "HIGH",
+  "explanation": "吉非罗齐显著升高他汀血药浓度并独立损伤肌肉，与辛伐他汀合用肌病和横纹肌溶解风险大增，说明书列为不宜合用。血脂需要联合治疗时可由医生换用非诺贝特等相对安全的组合。出现肌肉酸痛无力、酱油色尿立即就医。",
+  "basisSource": "辛伐他汀与吉非罗齐药品说明书【药物相互作用】项；中国血脂管理指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ATO-CLA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "阿托伐他汀",
+  "drugB": "克拉霉素",
+  "riskLevel": "HIGH",
+  "explanation": "克拉霉素是强CYP3A4抑制剂，可使阿托伐他汀暴露量成倍增加，横纹肌溶解风险显著升高。抗感染疗程期间建议暂停他汀或由医生更换阿奇霉素等相互作用小的抗生素。",
+  "basisSource": "阿托伐他汀与克拉霉素药品说明书【禁忌/药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MTX-SMX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "甲氨蝶呤",
+  "drugB": "复方磺胺甲噁唑",
+  "riskLevel": "HIGH",
+  "explanation": "甲氨蝶呤与复方磺胺甲噁唑都是叶酸拮抗相关药物，合用骨髓抑制（白细胞骤降、感染、出血）风险显著增加，说明书提示避免合用。感染需抗感染治疗时请医生更换其他抗生素。",
+  "basisSource": "甲氨蝶呤药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-MTX-AMX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "甲氨蝶呤",
+  "drugB": "阿莫西林",
+  "riskLevel": "MEDIUM",
+  "explanation": "青霉素类可减少甲氨蝶呤的肾脏清除，使其血药浓度升高、毒性增加。合用期间注意口腔溃疡、咽痛发热等骨髓抑制征兆，定期查血常规。",
+  "basisSource": "甲氨蝶呤药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书与文献整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-LEV-MCP",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "左旋多巴",
+  "drugB": "甲氧氯普胺",
+  "riskLevel": "HIGH",
+  "explanation": "甲氧氯普胺（胃复安）阻断中枢多巴胺受体，直接对抗左旋多巴的抗帕金森疗效，还可能诱发或加重震颤、僵直等锥体外系症状。帕金森患者止吐请医生改用多潘立酮等不透过血脑屏障的药物。",
+  "basisSource": "甲氧氯普胺与多巴丝肼（左旋多巴）药品说明书【禁忌/药物相互作用】项；中国帕金森病治疗指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-VEN-TRA",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "文拉法辛",
+  "drugB": "曲马多",
+  "riskLevel": "HIGH",
+  "explanation": "文拉法辛与曲马多都增强5-羟色胺能作用，合用可诱发5-羟色胺综合征（高热、大汗、抽搐、意识模糊），曲马多还会降低癫痫阈值。两者应避免合用，镇痛请医生更换方案。",
+  "basisSource": "文拉法辛与曲马多药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-TZD-INS",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "吡格列酮",
+  "drugB": "甘精胰岛素",
+  "riskLevel": "MEDIUM",
+  "explanation": "吡格列酮与胰岛素都会引起水钠潴留，合用心力衰竭风险叠加，老年患者水肿明显加重。心功能不全者应避免合用；确需联用时密切监测体重、水肿与气促。",
+  "basisSource": "吡格列酮药品说明书【警告】项；中国2型糖尿病防治指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-BIS-VER",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "比索洛尔",
+  "drugB": "维拉帕米",
+  "riskLevel": "HIGH",
+  "explanation": "比索洛尔与维拉帕米都抑制心脏传导和收缩，合用可致严重心动过缓、房室传导阻滞甚至心脏停搏。降压方案需要调整时请找医生，不要自行把洛尔类和维拉帕米（或地尔硫氮）叠加服用。",
+  "basisSource": "比索洛尔与维拉帕米药品说明书【药物相互作用】项；中国老年高血压管理指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DON-SOL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "多奈哌齐",
+  "drugB": "索利那新",
+  "riskLevel": "MEDIUM",
+  "explanation": "多奈哌齐通过增强胆碱能改善认知，索利那新是抗胆碱药，两者作用方向相反，合用会抵消多奈哌齐的疗效。痴呆患者的尿频尿急问题请先由医生评估，尽量避免加用强抗胆碱药。",
+  "basisSource": "Beers标准(2023)抗胆碱药条目；多奈哌齐与索利那新药品说明书",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-THE-MOX",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "茶碱",
+  "drugB": "莫西沙星",
+  "riskLevel": "MEDIUM",
+  "explanation": "喹诺酮类可抑制茶碱代谢使其浓度升高，出现恶心、心悸、手抖、失眠等茶碱中毒表现。合用期间监测茶碱浓度，必要时下调剂量。",
+  "basisSource": "茶碱缓释片与喹诺酮类药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DAP-NSAID",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "达格列净",
+  "drugB": "布洛芬",
+  "riskLevel": "MEDIUM",
+  "explanation": "达格列净有渗透性利尿作用使血容量偏低，布洛芬等NSAIDs又收缩肾内血管，两者叠加易致急性肾损伤，老年、脱水、联用利尿剂者风险更高。疼痛请先尝试对乙酰氨基酚等替代并咨询医生。",
+  "basisSource": "达格列净药品说明书【注意事项】项；KDIGO急性肾损伤指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-INS-BB",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "甘精胰岛素",
+  "drugB": "比索洛尔",
+  "riskLevel": "MEDIUM",
+  "explanation": "比索洛尔等β受体阻滞剂会掩盖低血糖的心慌、手抖等预警症状，并延缓血糖恢复，用胰岛素的老人可能发生无感知低血糖。合用时家属要更主动监测血糖，尤其夜间；出汗是不被掩盖的低血糖线索。",
+  "basisSource": "胰岛素与比索洛尔药品说明书【药物相互作用】项；中国老年糖尿病诊疗指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CIP-CAL",
+  "ruleType": "CONTRAINDICATED",
+  "drugA": "左氧氟沙星",
+  "drugB": "碳酸钙",
+  "riskLevel": "MEDIUM",
+  "explanation": "钙、铁、铝、镁等多价离子会与喹诺酮类螯合，使抗生素吸收骤减、治疗失败。服用左氧氟沙星前后2-4小时内不要吃钙片、铁剂或含铝镁的胃药。",
+  "basisSource": "左氧氟沙星与碳酸钙药品说明书【药物相互作用】项",
+  "reviewedBy": "依据说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-BB",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "比索洛尔",
+  "drugB": "美托洛尔",
+  "riskLevel": "HIGH",
+  "explanation": "比索洛尔和美托洛尔同属β受体阻滞剂（洛尔类），一起吃属于同类重复用药：心率可能过慢、血压过低、乏力头晕跌倒。同一类药通常只用一种，请医生核对处方后停掉其中一个。",
+  "basisSource": "比索洛尔与美托洛尔药品说明书【药理毒理】项；中国老年高血压管理指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-NIT",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "单硝酸异山梨酯",
+  "drugB": "硝酸异山梨酯",
+  "riskLevel": "HIGH",
+  "explanation": "单硝酸异山梨酯和硝酸异山梨酯（消心痛）是同一类硝酸酯，重复使用不会增加获益，反而加速耐药并引起头痛、体位性低血压。请医生核对，保留一种即可；急救用的硝酸甘油舌下含服不冲突。",
+  "basisSource": "硝酸酯类药品说明书；稳定性冠心病诊断与治疗指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-ACE",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "培哚普利",
+  "drugB": "依那普利",
+  "riskLevel": "HIGH",
+  "explanation": "培哚普利和依那普利都是普利类（ACEI），同类重复：降压过度、咳嗽和高钾血症风险叠加，且无任何额外获益。请医生核对处方只保留一种。",
+  "basisSource": "ACEI类药品说明书【药理毒理】项；中国高血压防治指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-ARB",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "替米沙坦",
+  "drugB": "缬沙坦",
+  "riskLevel": "HIGH",
+  "explanation": "替米沙坦和缬沙坦同属沙坦类（ARB），同类重复用药只增加低血压、高血钾和肾损伤风险。请医生核对处方只保留一种。",
+  "basisSource": "ARB类药品说明书【药理毒理】项；中国高血压防治指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-DUP-LOOP",
+  "ruleType": "DUPLICATE_INGREDIENT",
+  "drugA": "托拉塞米",
+  "drugB": "呋塞米",
+  "riskLevel": "MEDIUM",
+  "explanation": "托拉塞米和呋塞米同为袢利尿剂，重复使用易致脱水、低钾低钠和体位性低血压跌倒。通常只用一种，剂量调整请遵医嘱。",
+  "basisSource": "托拉塞米与呋塞米药品说明书【药理毒理】项；心力衰竭合理用药指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-ARB-SPA",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "替米沙坦",
+  "drugB": "螺内酯",
+  "riskLevel": "MEDIUM",
+  "explanation": "沙坦类与螺内酯（保钾利尿剂）都会升高血钾，合用高钾血症风险增加，老年和肾功能减退者尤甚。心衰患者此组合是正规方案，但必须定期查血钾和肌酐；请勿自行加量或叠加补钾。",
+  "basisSource": "ARB与螺内酯药品说明书【药物相互作用】项；中国心力衰竭诊断和治疗指南",
+  "reviewedBy": "依据说明书与指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-QT",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "胺碘酮",
+  "drugB": "喹硫平",
+  "riskLevel": "HIGH",
+  "explanation": "胺碘酮和喹硫平都延长QT间期，叠加后尖端扭转型室速（可致猝死）风险明显升高，老年、低钾、心动过缓者更危险。精神科用药请提前告知医生正在服胺碘酮，必要时查心电图并纠正低钾。",
+  "basisSource": "胺碘酮与喹硫平药品说明书【警告】项；CredibleMeds QT延长药物清单",
+  "reviewedBy": "依据说明书与QT药物清单整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-QT2",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "艾司西酞普兰",
+  "drugB": "阿奇霉素",
+  "riskLevel": "MEDIUM",
+  "explanation": "艾司西酞普兰（QT剂量相关延长）与大环内酯类叠加可延长QT间期。短期抗感染通常可控，但老年、低钾、合用其他QT药物者建议告知医生换药或监测心电图。",
+  "basisSource": "艾司西酞普兰药品说明书【警告】项（QT延长）；CredibleMeds QT延长药物清单",
+  "reviewedBy": "依据说明书与QT药物清单整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-CNS2",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "普瑞巴林",
+  "drugB": "唑吡坦",
+  "riskLevel": "MEDIUM",
+  "explanation": "普瑞巴林与唑吡坦都有中枢镇静作用，叠加后嗜睡、头晕、夜间起夜跌倒风险明显增加，与阿片类同用还有呼吸抑制风险。老年人尽量避免多种镇静类药物同服，失眠问题优先找医生评估病因。",
+  "basisSource": "Beers标准(2023)中枢神经系统药物条目；普瑞巴林与唑吡坦药品说明书",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-ACH",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "氯苯那敏",
+  "drugB": "索利那新",
+  "riskLevel": "MEDIUM",
+  "explanation": "氯苯那敏（扑尔敏）和索利那新都有抗胆碱作用，负担叠加可致口干、便秘、尿潴留、视物模糊，老年人还可能出现意识模糊和认知下降。抗过敏优先选氯雷他定等无抗胆碱作用的二代药物。",
+  "basisSource": "Beers标准(2023)抗胆碱能药物条目；中国老年人潜在不适当用药标准(2017)",
+  "reviewedBy": "依据Beers 2023与PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-CLS-SECR",
+  "ruleType": "CLASS_STACKING",
+  "drugA": "瑞格列奈",
+  "drugB": "格列美脲",
+  "riskLevel": "MEDIUM",
+  "explanation": "瑞格列奈（格列奈类）和格列美脲（磺脲类）都是胰岛素促泌剂，机制重叠，联用低血糖风险明显增加而获益有限。指南不推荐两种促泌剂联用，请医生调整为一种或换用其他机制降糖药。",
+  "basisSource": "中国2型糖尿病防治指南（联合治疗路径）；瑞格列奈与格列美脲药品说明书",
+  "reviewedBy": "依据指南整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-QUE",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "喹硫平",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "FDA黑框警告：老年痴呆相关精神病患者使用抗精神病药（含喹硫平）死亡风险增加，多死于心血管事件或感染。喹硫平未获批用于痴呆行为症状，老人使用必须由医生权衡利弊、低剂量短程并定期评估。",
+  "basisSource": "喹硫平药品说明书【黑框警告】；Beers标准(2023)抗精神病药条目",
+  "reviewedBy": "依据说明书黑框警告与Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-FLU",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "氟桂利嗪",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "氟桂利嗪（西比灵）老年人长期使用可增加抑郁和锥体外系症状（手抖、动作迟缓、步态障碍）风险，中国老年人潜在不适当用药标准建议避免长期连续使用。眩晕治疗应限期（一般不超过2个月）并定期评估。",
+  "basisSource": "中国老年人潜在不适当用药标准(2017)；氟桂利嗪药品说明书【注意事项】项",
+  "reviewedBy": "依据PIM 2017整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-SOL",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "索利那新",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "索利那新为强抗胆碱药，Beers标准建议老年人尽量避免长期使用：认知功能下降、谵妄、便秘、尿潴留风险增加，前列腺增生排尿困难的老人还可能诱发急性尿潴留。用药期间注意排尿情况与认知变化。",
+  "basisSource": "Beers标准(2023)抗胆碱能药物条目；索利那新药品说明书【注意事项】项",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-CIL",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "西洛他唑",
+  "drugB": "",
+  "riskLevel": "HIGH",
+  "explanation": "西洛他唑对任何程度的心力衰竭患者均属禁用（PDE3抑制剂类正性肌力药已证实增加心衰患者死亡率）。有心脏病史的老年人使用前务必告知医生完整病史，出现气促、水肿加重立即停药就医。",
+  "basisSource": "西洛他唑药品说明书【禁忌】项（心力衰竭）",
+  "reviewedBy": "依据说明书禁忌整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-MOX",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "莫西沙星",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "老年人使用莫西沙星需警惕QT间期延长、肌腱炎/肌腱断裂、中枢神经系统反应和主动脉病变风险。轻中度感染优先选择风险更低的抗生素；用药期间出现跟腱疼痛肿胀、心悸晕厥立即停药就医。",
+  "basisSource": "氟喹诺酮类FDA安全性通告；莫西沙星药品说明书【警告】项；Beers标准(2023)",
+  "reviewedBy": "依据FDA通告与说明书整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-PREG",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "普瑞巴林",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "普瑞巴林在老年人中易致嗜睡、头晕、外周水肿和跌倒骨折，Beers标准提示与阿片类合用还有呼吸抑制风险。老人应低剂量起始、按肾功能减量，服药初期避免独自外出和爬梯。",
+  "basisSource": "Beers标准(2023)；普瑞巴林药品说明书【老年用药】项",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-MCP",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "甲氧氯普胺",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "甲氧氯普胺（胃复安）老年人使用超过12周有迟发性运动障碍风险（FDA黑框警告，可能不可逆），还可致锥体外系反应。老年止吐建议短期小剂量，或换用多潘立酮等替代（仍需医生评估心脏风险）。",
+  "basisSource": "甲氧氯普胺药品说明书【黑框警告】；Beers标准(2023)条目",
+  "reviewedBy": "依据说明书黑框警告与Beers 2023整理，正式上线前待执业药师复核"
+ },
+ {
+  "ruleCode": "CR-PIM-DIP",
+  "ruleType": "ELDERLY_CAUTION",
+  "drugA": "双嘧达莫",
+  "drugB": "",
+  "riskLevel": "MEDIUM",
+  "explanation": "Beers标准提示老年人避免长期使用短效双嘧达莫（潘生丁）：体位性低血压和头晕跌倒风险明确，预防卒中的有效性也不优于阿司匹林。抗栓方案请由医生选择证据更充分的药物。",
+  "basisSource": "Beers标准(2023)；双嘧达莫药品说明书【注意事项】项",
+  "reviewedBy": "依据Beers 2023整理，正式上线前待执业药师复核"
+ }
+]
