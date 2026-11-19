@@ -1,5 +1,5 @@
 <template>
-  <view class="login-page">
+  <view class="login-page" :style="{ paddingTop: (statusBar + 30) + 'px' }">
     <view class="logo">💊</view>
     <view class="title">安心药助手</view>
     <view class="subtitle">智慧养老安全用药辅助平台</view>
@@ -59,6 +59,9 @@ const role = ref<'ELDER' | 'FAMILY'>('ELDER')
 const agree = ref(false)
 const busy = ref(false)
 const user = useUser()
+// 真实状态栏高度，用于刘海屏/挖孔屏顶部避让（自定义导航栏无系统占位）
+const statusBar = ((uni as any).getWindowInfo ? (uni as any).getWindowInfo().statusBarHeight : null)
+  ?? (uni.getSystemInfoSync().statusBarHeight || 20)
 
 function fillDemo(kind: 'ELDER' | 'FAMILY' = 'ELDER') {
   mode.value = 'login'
@@ -89,7 +92,7 @@ async function submit() {
 </script>
 
 <style scoped>
-.login-page { min-height: 100vh; padding: 110rpx 24rpx 40rpx; background: linear-gradient(180deg, #c7f2e9 0%, #e6f7f3 26%, #f4f7f8 52%); }
+.login-page { min-height: 100vh; padding: 0 24rpx 40rpx; background: linear-gradient(180deg, #c7f2e9 0%, #e6f7f3 26%, #f4f7f8 52%); }
 .logo { width: 210rpx; height: 210rpx; margin: 0 auto; border-radius: 68rpx; font-size: 110rpx; line-height: 210rpx; text-align: center;
   background: linear-gradient(145deg, #ffffff, #d9f7f0);
   box-shadow: 0 28rpx 70rpx rgba(13, 148, 136, 0.28), inset 0 4rpx 0 rgba(255, 255, 255, 0.9), 0 2rpx 8rpx rgba(15, 23, 42, 0.05); }
